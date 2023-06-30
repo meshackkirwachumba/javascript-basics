@@ -1,22 +1,37 @@
-//a variable is a container for storing data
-// a variable behaves as if it was the value that it contains
+//ARITHMETIC EXPRESSION
+/**
+ is a combination of operands(values, variables, )
+ operators( +, -, * /)
+ that can be evaluated to a value
+ eg y = x +8
+ */
 
+let studentsPop = 20;
 
-//2 STEPS
-//1: Declaration (var, let, const)
-//2: Assignment (= assignment operator)
+//one student enrolled
+studentsPop +=1 //augmented asignment operator
+console.log(studentsPop)
 
-let age;
-age = 23
+//make 2 classes
+studentsPop = 2 * 20;
+console.log(studentsPop)
 
-let firstName = "Meshack"
-let isAStudent = true
+//divide studendts into groups of 5
+let groups = studentsPop / 5
+console.log("Groups formed:", groups)
 
-console.log("Hello", firstName) //string
-console.log("You are", age, "years old") //number
-console.log("Enrolled:",isAStudent) //boolean
+//students who missed 3 eggs during distribution
+//MODULO OPERATOR %
+let missed = studentsPop % 3;
+console.log("Studensts who missed eggs: ", missed)
 
-//DISPLAY IN DOM
-document.getElementById("p1").innerHTML = firstName;
-document.getElementById("p2").innerHTML = "You are " + age + " years old";
-document.getElementById("p3").innerHTML = "Enrolled: " + isAStudent;
+//OPERATOR PRECEDENCE
+/* 
+ 1. Parentheses
+ 2. Exponents
+ 3. Multiplication and Division
+ 4.Addition and Subtraction
+ */
+
+ let result = 8 + 2 - 3 * (20/10)
+ console.log(result)
