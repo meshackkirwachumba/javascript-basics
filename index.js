@@ -1,28 +1,14 @@
-let a;
-let b;
-let c;
+let count = 0;
 
-a = window.prompt("Enter side A")
-b = window.prompt("Enter side B")
-//convert to number type
-a = Number(a)
-b = Number(b)
-
-c = Math.pow(a, 2) + Math.pow(b, 2)
-c = Math.sqrt(c)
-console.log(c)
-
-
-//FROM HTML
-
-document.getElementById('submitButton').onclick = function(){
-    let aa = document.getElementById('aText').value;
-    aa = Number(aa)
-
-    let bb = document.getElementById('bText').value;
-    bb = Number(bb)
-
-    let cc = Math.sqrt(Math.pow(aa, 2) + Math.pow(bb, 2))
-
-    document.getElementById('cLabel').innerHTML = 'Side C: ' + cc
+document.getElementById('decreaseButton').onclick = function(){
+    count -=1
+    document.getElementById('countLabel').innerHTML = count
+}
+document.getElementById('resetButton').onclick = function(){
+    count =0
+    document.getElementById('countLabel').innerHTML = count
+}
+document.getElementById('increaseButton').onclick = function(){
+    count +=1
+    document.getElementById('countLabel').innerHTML = count
 }
