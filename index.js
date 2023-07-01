@@ -1,37 +1,23 @@
-//ARITHMETIC EXPRESSION
-/**
- is a combination of operands(values, variables, )
- operators( +, -, * /)
- that can be evaluated to a value
- eg y = x +8
- */
+//TYPE CONVERSION
+//changing the data type of a value to another data type (strings, boolean, numbers)
 
-let studentsPop = 20;
+let age = window.prompt("what is your age?")
 
-//one student enrolled
-studentsPop +=1 //augmented asignment operator
-console.log(studentsPop)
+console.log(typeof age) //string
 
-//make 2 classes
-studentsPop = 2 * 20;
-console.log(studentsPop)
+//use types constructor for conversion
+let myAge = Number(age) + 1;
+console.log("Happy birthday!! You are ", myAge, "years old") //79
 
-//divide studendts into groups of 5
-let groups = studentsPop / 5
-console.log("Groups formed:", groups)
+let x = "3.14"
+let y = Number(x) //3.14
+let z = String(y)
 
-//students who missed 3 eggs during distribution
-//MODULO OPERATOR %
-let missed = studentsPop % 3;
-console.log("Studensts who missed eggs: ", missed)
+let u = Boolean("") //false
+let t = Boolean("yeah") //true
 
-//OPERATOR PRECEDENCE
-/* 
- 1. Parentheses
- 2. Exponents
- 3. Multiplication and Division
- 4.Addition and Subtraction
- */
+console.log("y is: ", typeof y) //number type
+console.log("z is: ",typeof z) // string type
+console.log("u is: ", typeof u) //false
+console.log("t is: ", typeof t) //true
 
- let result = 8 + 2 - 3 * (20/10)
- console.log(result)
